@@ -104,7 +104,7 @@ The `notebooks/` directory walks through the model end to end:
 
 ```
 dqgm/                python package
-    model.py             IQP circuit: qubit layout and gate connectivity
+    model.py             DQGM circuit: qubit layout and gate connectivity
     classical_simulator.py  MC-based P(v=0|x) estimator used for training
     qiskit_simulator.py     exact statevector / sampling backend for evaluation
     trainer.py           mini-batch training loop
