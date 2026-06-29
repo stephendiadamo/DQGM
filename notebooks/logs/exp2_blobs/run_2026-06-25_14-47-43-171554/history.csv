@@ -1,0 +1,2 @@
+step,batch_loss,train_kl,train_jsd,train_tvd,params_l1_norm,params_l2_norm,grad_l1_norm,grad_l2_norm,elapsed
+0,nan,3.3814087255697447,0.4932886684984028,0.8253649217886547,48.50039079922006,8.160297341940334,nan,nan,0.0

@@ -1,0 +1,39 @@
+experiment:
+  name: DQGM
+  description: "1D Gaussian — single-feature density estimation."
+  save_dir: "./logs/exp1_gaussian/"
+
+data:
+  dataset: 'gaussian'
+  num_samples: 100_000
+  encoding: "dense"
+  seed: 7
+
+model:
+  num_visible_per_feature: 17
+  num_feature: 1
+  num_hidden_shared: 4
+  seed: 3
+  multivariate_bits: False
+  init_scale: 3.1415
+  init_method: "random"
+  freq_buffer: 1
+
+classical_simulator:
+  marginal_estimator_method: "mc"
+  num_operators: 1000          # number of random hidden bitstrings per step
+
+training:
+  optimizer: "adam"
+  learning_rate: 0.15
+  batch_size: 64
+  decay_rate: 0.99
+  transition_steps: 10
+  num_steps: 10000
+  l1_lambda: 0.00
+  l2_lambda: 0.00
+  log_every: 10
+  checkpoint_every: 1000
+  seed: 7
+  print_verbosity: 1   # 1 = show tqdm progress bar
+  log_verbosity: 1     # 1 = save parameter snapshots at each checkpoint

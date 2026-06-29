@@ -1,0 +1,26 @@
+# Conda environment for DQGM, pinned to the versions we trained and tested with.
+#
+#   conda env create -f environment.yml
+#   conda activate dqgm
+#
+# The jax[cuda12] wheel targets a Linux machine with an NVIDIA GPU. On CPU-only
+# machines (or macOS) replace it with the plain `jax==0.8.2` line below.
+name: dqgm
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12
+  - pip
+  - pip:
+      - jax[cuda12]==0.8.2   # CPU/macOS: use  jax==0.8.2  instead
+      - optax==0.2.6
+      - numpy==2.4.1
+      - scipy==1.17.0
+      - scikit-learn==1.8.0
+      - qiskit==2.4.0
+      - qiskit-aer==0.17.2
+      - matplotlib==3.10.8
+      - pyyaml==6.0.3
+      - tqdm==4.67.1
+      - jupyterlab
+      - -e .
