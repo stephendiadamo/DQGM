@@ -4,8 +4,8 @@ Reference implementation for the paper
 **"Quantum Fourier Generative Models Trainable at Large Scale"**.
 
 <p align="center">
-  <a href="https://arxiv.org/abs/XXXX.XXXXX">
-    <img src="https://img.shields.io/badge/arXiv-coming%20soon-b31b1b?logo=arxiv&logoColor=white" alt="arXiv (coming soon)">
+  <a href="https://arxiv.org/abs/2606.28483">
+    <img src="https://img.shields.io/badge/arXiv-2606.28483-b31b1b?logo=arxiv&logoColor=white" alt="arXiv 2606.28483">
   </a>
   <a href="https://doi.org/10.6084/m9.figshare.32789952">
     <img src="https://img.shields.io/badge/Data-figshare-1f6fbf?logo=figshare&logoColor=white" alt="Data on figshare">
@@ -119,9 +119,13 @@ notebooks/           worked examples
 ## Citation
 
 ```bibtex
-@article{dqgm,
-  title  = {Quantum Fourier Generative Models Trainable at Large Scale},
-  author = {...},
-  year   = {2026},
+@misc{tuysuz2026,
+      title={Quantum Fourier Generative Models Trainable at Large Scale}, 
+      author={Cenk Tüysüz and Oleksandr Kyriienko and Michele Grossi},
+      year={2026},
+      eprint={2606.28483},
+      archivePrefix={arXiv},
+      primaryClass={quant-ph},
+      url={https://arxiv.org/abs/2606.28483}, 
 }
 ```
